@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+ErrorDocument 401 https://cheerful-dogfish-admittedly.ngrok-free.app/project/app/login
+ErrorDocument 402 https://cheerful-dogfish-admittedly.ngrok-free.app/project/app/login
+ErrorDocument 403 https://cheerful-dogfish-admittedly.ngrok-free.app/project/app/login
+ErrorDocument 404 http://localhost/project/app/login
+ErrorDocument 500 https://cheerful-dogfish-admittedly.ngrok-free.app/project/app/login
+
+php_flag display_errors off
