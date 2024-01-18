@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+ErrorDocument 401 http://tiny.cc/support-troubleshooting
+ErrorDocument 402 http://tiny.cc/support-troubleshooting
+ErrorDocument 403 http://tiny.cc/support-troubleshooting
+ErrorDocument 404 http://tiny.cc/support-troubleshooting
+ErrorDocument 500 http://tiny.cc/support-troubleshooting
+
+
+php_flag display_errors off 
